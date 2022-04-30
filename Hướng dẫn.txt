@@ -1,0 +1,28 @@
+Bro bình tĩnh cứ làm theo hướng dẫn là ok =)))
+
+// Trường hợp tải zip về:
+
+1. Tạo database có tên: weblaravel-shoesshop (utf8_unicode_ci)
+2. Mở Terminal của Visual Studio Code.
+3. Gõ lần lượt các lệnh: 
+	composer install (nếu không được thì composer update, không được tiếp thì composer install --ignore-platform-reqs)
+	npm install (nếu không được thì npm update, không được tiếp thì npm install --ignore-platform-reqs)
+	npm run dev
+	php artisan migrate:fresh --seed
+	php artisan key:generate
+	php artisan serve
+
+
+
+// Trường hợp git về từ github:
+
+1. Tạo database có tên: weblaravel_shoesshop (utf8_unicode_ci)
+2. Mở Terminal của Visual Studio Code.
+3. Gõ lần lượt các lệnh: 
+	cp .env.example .env
+	composer install (nếu không được thì composer update, không được tiếp thì composer install --ignore-platform-reqs)
+	npm install (nếu không được thì npm update, không được tiếp thì npm install --ignore-platform-reqs)
+	npm run dev
+	php artisan migrate:fresh --seed
+	php artisan key:generate
+	php artisan serve
