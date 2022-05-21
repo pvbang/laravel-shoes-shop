@@ -49,32 +49,30 @@ class GiayController extends Controller
         $hinh4 = "";
 
         if($request->file('hinh_anh_1')){
-            // $hinh1 = $request->file('hinh_anh_1')->getClientOriginalName();
-            // $request->file('hinh_anh_1')->storeAs('public/images', $hinh1);
             $filename1 = $request->file('hinh_anh_1');
             $hinh1 = $filename1->getClientOriginalName();
             $filename1 -> move(public_path('storage/images'), $hinh1);
         }
         if($request->file('hinh_anh_2')){
-            // $hinh2 = $request->file('hinh_anh_2')->getClientOriginalName();
-            // $request->file('hinh_anh_2')->storeAs('public/images', $hinh2);
             $filename2 = $request->file('hinh_anh_2');
             $hinh2 = $filename2->getClientOriginalName();
             $filename2 -> move(public_path('storage/images'), $hinh2);
+        } else {
+            $hinh2 = $hinh1;
         }
         if($request->file('hinh_anh_3')){
-            // $hinh3 = $request->file('hinh_anh_3')->getClientOriginalName();
-            // $request->file('hinh_anh_3')->storeAs('public/images', $hinh3);
             $filename3 = $request->file('hinh_anh_3');
             $hinh3 = $filename3->getClientOriginalName();
             $filename3 -> move(public_path('storage/images'), $hinh3);
+        } else {
+            $hinh3 = $hinh1;
         }
         if($request->file('hinh_anh_4')){
-            // $hinh4 = $request->file('hinh_anh_4')->getClientOriginalName();
-            // $request->file('hinh_anh_4')->storeAs('public/images', $hinh4);
             $filename4 = $request->file('hinh_anh_4');
             $hinh4 = $filename4->getClientOriginalName();
             $filename4 -> move(public_path('storage/images'), $hinh4);
+        } else {
+            $hinh4 = $hinh1;
         }
        
         $giay = Giay::create([
@@ -176,6 +174,8 @@ class GiayController extends Controller
             $filename2 = $request->file('hinh_anh_2');
             $hinh2 = $filename2->getClientOriginalName();
             $filename2 -> move(public_path('storage/images'), $hinh2);
+        } else {
+            $hinh2 = $hinh1;
         }
         if($request->file('hinh_anh_3')){
             // $hinh3 = $request->file('hinh_anh_3')->getClientOriginalName();
@@ -183,6 +183,8 @@ class GiayController extends Controller
             $filename3 = $request->file('hinh_anh_3');
             $hinh3 = $filename3->getClientOriginalName();
             $filename3 -> move(public_path('storage/images'), $hinh3);
+        } else {
+            $hinh3 = $hinh1;
         }
         if($request->file('hinh_anh_4')){
             // $hinh4 = $request->file('hinh_anh_4')->getClientOriginalName();
@@ -190,6 +192,8 @@ class GiayController extends Controller
             $filename4 = $request->file('hinh_anh_4');
             $hinh4 = $filename4->getClientOriginalName();
             $filename4 -> move(public_path('storage/images'), $hinh4);
+        } else {
+            $hinh4 = $hinh1;
         }
 
         $giay = Giay::find($request->id_giay);

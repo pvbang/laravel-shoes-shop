@@ -9,7 +9,7 @@
 ### Cách chạy chương trình
 
 #### Clone:
-<p>Tạo database có tên: weblaravel_shoesshop (utf8_unicode_ci)</p>
+<p>Tạo database có tên: pvbshoesshop (utf8_unicode_ci)</p>
 <p>Mở Terminal của Visual Studio Code</p>
 <p>cp .env.example .env</p>
 <p>composer install</p>
