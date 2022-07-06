@@ -1,13 +1,16 @@
 ## PvB SHOES SHOP (Website Laravel)
 
-### Link website: https://pvbshoesshop.000webhostapp.com/
+```bash
+# Link website: 
+https://pvbshoesshop.000webhostapp.com/
+```
 
 ### Install: (Run in Terminal)
 ```bash
+cp .env.example .env
 composer install 	
 # or: composer update 
 # or: composer install --ignore-platform-reqs  
-cp .env.example .env
 npm install
 npm run dev
 create database: pvbshoesshop   # utf8_unicode_ci
