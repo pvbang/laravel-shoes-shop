@@ -22,10 +22,10 @@ php artisan serve
 
 ### Admin account:
 ```bash
-# Username:
+# username:
 admin
 
-# Password:
+# password:
 admin
 ```
 
