@@ -20,6 +20,15 @@ php artisan key:generate
 php artisan serve
 ```
 
+### Admin account:
+```bash
+# Username:
+admin
+
+# Password:
+admin
+```
+
 ## Dev: Phan Văn Bằng
 ###### Facebook: fb.com/it0902
 ###### Github: github.com/ilyouu
