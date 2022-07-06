@@ -9,8 +9,9 @@ https://pvbshoesshop.000webhostapp.com/
 ```bash
 cp .env.example .env
 composer install 	
+# or: composer install --ignore-platform-reqs
 # or: composer update 
-# or: composer install --ignore-platform-reqs  
+# or: composer update --ignore-platform-reqs  
 npm install
 npm run dev
 create database: pvbshoesshop   # utf8_unicode_ci
